@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <%= t.include("partials/_meta.html", grunt.data.json) %>
   </head>
@@ -19,123 +21,123 @@
 
 
 
-    <section id="topper">
+    <div id="topper">
 
-      <div class="bg-video"><iframe src="https://player.vimeo.com/video/334842841?background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+      <div class="video-background">
+        <div class="video-foreground">
+          <iframe src="https://player.vimeo.com/video/334842841?background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
       
       <div class="title">
         <h1>Uneven Ground</h1>
         <div class="deck">Women make up just 3% of lucrative male dominated construction jobs  -– Gender based harassment and discrimination has kept their numbers virtually unchanged half a century after affirmative action.</div>
+        <div class="buttons">
+          <button>Start</button>
+          <button>All Videos</button>
+          <button>About</button>
+        </div>
       </div>
 
-    </section>
+    </div>
 
 
-    <section id="top-interactive">
+    <section id="start">
       INTERACTIVE HERE
     </section>
 
+    <section id="videos">
+      <div class="main-carousel">
 
-    <section id="intro">
+        <div class="carousel-cell">
+          <div class="embed-container">
+            <iframe src="https://player.vimeo.com/video/333648895" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <div class="video-title">THIS IS A TITLE</div>
+        </div>
+
+        <div class="carousel-cell">
+          <div class="embed-container">
+            <iframe src="https://player.vimeo.com/video/333648895" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <div class="video-title">THIS IS A TITLE</div>
+        </div>
+
+        <div class="carousel-cell">
+          <div class="embed-container">
+            <iframe src="https://player.vimeo.com/video/333648895" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <div class="video-title">THIS IS A TITLE</div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about">
+      <article>
+        <h2>Thi is a header</h2>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."</p>
+
+        <div class="inline-img">
+          <img src="./assets/jenaya_steps.jpg">
+          <div class="caption">This is a caption...</div>
+        </div>
+
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."</p>
       
-      <div class="embed-container"><iframe src="https://player.vimeo.com/video/333648895?background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."</p>
 
-      <p>Decades after affirmative action, there has been virtually no progress increasing the number of women in these lucrative male dominated jobs.</p> 
-
-      <p>In the wake of the MeToo movement, sexual harassment complaints in fields with fewer women have increased, signaling a potential change in the culture around reporting incidents.</p> 
-
-      <p>And the reason why doesn't take a general foreman to decipher...gender discrimination and sexual harassment is alive and well in California's construction industry.</p>
-
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source."</p>
+      </article>
     </section>
 
 
-    <section id="linda">
 
-      <div class="embed-container"><iframe src="https://player.vimeo.com/video/310197402?background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+    <section id="grid-videos">
 
-      <p>Decades after affirmative action, there has been virtually no progress increasing the number of women in these lucrative male dominated jobs.</p> 
+      <h2>All Videos</h2>
 
-      <p>In the wake of the MeToo movement, sexual harassment complaints in fields with fewer women have increased, signaling a potential change in the culture around reporting incidents.</p> 
+      <div class="video">
+        <div class="embed-container"><iframe src="https://player.vimeo.com/video/333648895" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <div class="caption">THIS IS A CAPTION</div>
+      </div>
 
-      <p>And the reason why doesn't take a general foreman to decipher...gender discrimination and sexual harassment is alive and well in California's construction industry.</p>
+      <div class="video">
+        <div class="embed-container"><iframe src="https://player.vimeo.com/video/333648895" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <div class="caption">THIS IS A CAPTION</div>
+      </div>
 
-    </section>
+      <div class="video">
+        <div class="embed-container"><iframe src="https://player.vimeo.com/video/333648895" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <div class="caption">THIS IS A CAPTION</div>
+      </div>
 
+      <div class="video">
+        <div class="embed-container"><iframe src="https://player.vimeo.com/video/333648895" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <div class="caption">THIS IS A CAPTION</div>
+      </div>
 
-    <section id="susan">
+      <div class="video">
+        <div class="embed-container"><iframe src="https://player.vimeo.com/video/333648895" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <div class="caption">THIS IS A CAPTION</div>
+      </div>
 
-      <div class="embed-container"><iframe src="https://player.vimeo.com/video/333649239?background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+      <div class="video">
+        <div class="embed-container"><iframe src="https://player.vimeo.com/video/333648895" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <div class="caption">THIS IS A CAPTION</div>
+      </div>
 
-      <div>
-        TIMELINE EMBED HERE
+      <div class="video">
+        <div class="embed-container"><iframe src="https://player.vimeo.com/video/333648895" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <div class="caption">THIS IS A CAPTION</div>
+      </div>
+
+      <div class="video">
+        <div class="embed-container"><iframe src="https://player.vimeo.com/video/333648895" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <div class="caption">THIS IS A CAPTION</div>
       </div>
 
     </section>
-
-
-    <section id="jennifer">
-
-      <div class="embed-container"><iframe src="https://player.vimeo.com/video/310197402?background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-
-      <p>Decades after affirmative action, there has been virtually no progress increasing the number of women in these lucrative male dominated jobs.</p> 
-
-      <p>In the wake of the MeToo movement, sexual harassment complaints in fields with fewer women have increased, signaling a potential change in the culture around reporting incidents.</p> 
-
-      <p>And the reason why doesn't take a general foreman to decipher...gender discrimination and sexual harassment is alive and well in California's construction industry.</p>
-
-    </section>
-
-
-    <section id="jenna">
-
-      <div class="embed-container"><iframe src="https://player.vimeo.com/video/310197402?background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-
-      <p>Decades after affirmative action, there has been virtually no progress increasing the number of women in these lucrative male dominated jobs.</p> 
-
-      <p>In the wake of the MeToo movement, sexual harassment complaints in fields with fewer women have increased, signaling a potential change in the culture around reporting incidents.</p> 
-
-      <p>And the reason why doesn't take a general foreman to decipher...gender discrimination and sexual harassment is alive and well in California's construction industry.</p>
-
-    </section>
-
-
-    <section id="end">
-
-      <div class="embed-container"><iframe src="https://player.vimeo.com/video/333645902?background=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-
-      <p>Decades after affirmative action, there has been virtually no progress increasing the number of women in these lucrative male dominated jobs.</p> 
-
-      <p>In the wake of the MeToo movement, sexual harassment complaints in fields with fewer women have increased, signaling a potential change in the culture around reporting incidents.</p> 
-
-      <p>And the reason why doesn't take a general foreman to decipher...gender discrimination and sexual harassment is alive and well in California's construction industry.</p>
-
-    </section>
-
-
-
-
-    <!-- CODE FOR COURT RECORDS; Its pulling from the assets folder -->
-
-      <div class="inline-asset">
-        <img src="./assets/4D7A6285.jpg">
-      </div>
-
-
-
-      <!-- CODE FOR INLINE PHOTOS; its  pulling from the assets folder-->
-
-      <div class="inline-asset">
-        <img src="./assets/jenaya_steps.jpg">
-        <div class="caption">THIS IS A CAPTION <span class="credit">Photographer Name</span></div>
-      </div>
-      
-
- <!-- CODE FOR COURT RECORDS; Its pulling from the assets folder -->
-
-      <div class="inline-asset">
-        <img src="./assets/4D7A6285.jpg">
-      </div>
-
 
 
   <script src="app.js" async></script>  
