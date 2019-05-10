@@ -183,6 +183,8 @@ section{
 	h2{
 		text-align: center;
 	}
+
+	padding-bottom:3em;
 }
 
 
@@ -228,6 +230,9 @@ svg{
 	background: #333;
 	color:red;
 	display: inline-block;
+  position: absolute;
+  left: 10px;
+  bottom: 70px;
 
 	@media @mobile{
 		font-size: 12px;
@@ -238,11 +243,14 @@ svg{
 #grid-videos{
 	.display-flex;
 	.flex-wrap(wrap);
-	margin:3em 0;
+	padding:3em 0 6em;
+	color:#fff;
+	background: #333;
 
 	h2{
 		.flex(0 0 100%);
 		text-align: center;
+		font-family: @sans-serif;
 	}
 
 
