@@ -40,6 +40,7 @@ iframe{
 		font-family:@sans-serif-bold;
 		width:100%;
 		text-align: center;
+		background: #fff;
 		position: absolute;
 		flex-direction: column;
 		top:0;
@@ -134,4 +135,104 @@ section{
 	.credit{
 		color:@gray;
 	}
+}
+
+
+.buttons{
+	.display-flex;
+	margin-top:1em;
+}
+
+.video-background {
+    background: #000;
+    position: absolute;
+    height: 108vh;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+}
+#vidtop-content {
+    top: 0;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+
+#about{
+
+	h2{
+		text-align: center;
+	}
+}
+
+
+button{
+	margin:0 5px;
+	font-family: @sans-serif;
+	font-weight: bold;
+	background: #909090;
+	color:#fff;
+	border: none;
+	text-transform: uppercase;
+	border-radius:3px;
+	padding:10px 15px;
+	cursor: pointer;
+	font-size: 0.71em;
+	box-shadow: 1px 2px 6px #333;
+}
+
+.main-carousel{
+	margin-bottom: 2em;
+}
+
+.carousel-cell{
+	width: 100%;
+}
+
+.video-title{
+	padding:10px 15px;
+	font-family:@sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	background: #333;
+	color:red;
+	display: inline-block;
+
+	@media @mobile{
+		font-size: 12px;
+	}
+}
+
+
+#grid-videos{
+	.display-flex;
+	.flex-wrap(wrap);
+	margin:3em 0;
+
+	h2{
+		.flex(0 0 100%);
+		text-align: center;
+	}
+
+
+	.video{
+		.flex(0 0 25%);
+		padding:10px;
+
+		@media @mobile{
+			.flex(0 0 100%);
+		}
+	}
+
+
 }
