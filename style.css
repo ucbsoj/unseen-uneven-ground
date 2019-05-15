@@ -806,6 +806,18 @@ svg {
   margin-top: 5px;
   margin: 0 auto;
 }
+@font-face {
+  font-family: "Upstater";
+  font-weight: normal;
+  font-style: normal;
+  src: local('Upstater'), url("assets/fonts/Upstater-Regular.woff");
+}
+@font-face {
+  font-family: "Upstater Shadow";
+  font-weight: normal;
+  font-style: normal;
+  src: local('Upstater Shadow'), url("assets/fonts/Upstater-Shadow.woff");
+}
 #bottom-nav {
   background: #fff;
 }

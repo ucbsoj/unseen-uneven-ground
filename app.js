@@ -29123,6 +29123,30 @@ var flkty = new Flickity(elem, {
   contain: true
 });
 
+(0, _jquery2.default)(document).ready(function () {
+
+  (0, _jquery2.default)(".hamburger").click(function () {
+    (0, _jquery2.default)(".menu").slideToggle("slow", function () {
+      (0, _jquery2.default)(".hamburger").hide();
+      (0, _jquery2.default)(".cross").show();
+    });
+  });
+
+  (0, _jquery2.default)(".cross").click(function () {
+    (0, _jquery2.default)(".menu").slideToggle("slow", function () {
+      (0, _jquery2.default)(".cross").hide();
+      (0, _jquery2.default)(".hamburger").show();
+    });
+  });
+
+  (0, _jquery2.default)(".menu ul").click(function () {
+    (0, _jquery2.default)(".menu").slideToggle("slow", function () {
+      (0, _jquery2.default)(".cross").hide();
+      (0, _jquery2.default)(".hamburger").show();
+    });
+  });
+});
+
 window.createGraphic = function (graphicSelector) {
 
   var graphicEl = _$d3Node_32.select('.graphic');
