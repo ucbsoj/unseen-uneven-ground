@@ -609,7 +609,7 @@ svg {
   flex-wrap: wrap;
   padding: 3em 0 6em;
   color: #fff;
-  background: #333;
+  background: #000;
 }
 #grid-videos h2 {
   -webkit-flex: 0 0 100%;
